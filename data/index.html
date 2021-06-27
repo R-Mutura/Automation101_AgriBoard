@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width= device-width">
+  <meta name="description" content="MACHADA Farm Monitoring System">
+  <!--add a refresh meta here later of 30sec or greater
+  <meta http-equiv="refresh" content="30">
+  -->
+  <meta name="keywords" content="MACHADA, agricultural monitor, farm monitor, farm monitoring system, crop monitoring system, farm website">
+  <meta name="Author" content="Robert Mutura">
+  <title>MACHADA Farm Monitoring System</title>
+
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <header id="main_header">
+      <div class="container">
+        <div class= "branding">
+          <img src="/machada logo.png" alt="machada logo" width="300">
+           <h1> MACHADA FARM MONITORING SYSTEM </h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#light" title="">Light</a></li>
+            <li><a href="#temperature" title="">Temperature</a></li>
+            <li><a href="#humidity" title="">Humidity</a></li>
+            <li><a href="#humidity" title="">Humidity</a></li>
+            <li><a href="#ph" title="">PH</a></li>
+            <li><a href="#nutrients" title="">Nutrients</a></li>
+             <li><a href="#water-level" title="">Water</a></li>
+          </ul>
+        </nav>
+       </div>
+       </header>
+    <!-- /header -->
+    <section id= "showcase">
+      <div class="container">
+        <div>
+        <h1>FARM MONITORING SYSTEM</h1>
+        <P> Total control at the touch of a button. You are able to monitor and control:
+          <br>
+          <ul>
+            <li>Lighting</li>
+            <li>Temperature</li>
+            <li>Humidity</li>
+            <li>PH_Level</li>
+            <li>Nutrients</li>
+            <li>Water Level</li>
+          </ul>
+
+          <br> Change set points as well as state of machines <span class="highlight"> to be added</span>
+
+        </P>
+      </div>
+      
+    </section>
+
+    <section id="data">
+
+      <div class="container">
+        <div class ="box">
+        <div id="light">
+
+          <h3>Lighting</h3>
+         <img src="/light icon.png" alt="light icon" width="100">
+            <p>STATUS: Light <strong>%light_status%</strong> </p> 
+          </div>
+        </div>
+        <div class ="box">
+        <div class = "the_second">
+          <h3>Switch lights ON/OFF</h3>
+          <p> <a href="/lighton"><button class="button">ON</button></a></p>
+          <p> <a href="/lightoff"><button class="button">OFF</button></a></p>
+          <!--ATTACH A LINK HERE-->
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class=container>
+        <div class ="box">
+        <div id="temperature">
+          <h3>TEMPERATURE</h3>
+          <img src="/temperature icon.png" alt="temperature icon" width="100">
+          <p><strong>%temperature% </strong> Deg</p>
+
+          <!--PLACE THE DATA TO BE SHOWN HEAR-->
+        </div>
+         </div>
+         <div class ="box">
+        <div class = "the_second">
+          <h3>Heater</h3>
+           <img src="/heater icon.png" alt="heater icon" width="100">
+          <!--ADD TEXT TO SHOW HEATER IS ON HERE-->
+          <p>STATUS: Heater <strong>%heater_status%</strong></p>
+          <br>
+          <p>Turn Heater ON/OFF</p>
+          <p> <a href="/heateron"><button class="button">ON</button></a></p>
+          <p> <a href="/heateroff"><button class="button">OFF</button></a></p>
+        </div>
+        <p>limits set: 20 degrees-30degees.</p>
+         </div>
+
+         <div class ="box">
+        <div class = "the_second">
+          <h3>Fan</h3>
+           <img src="/fan icon.png" alt="fan icon" width="100">
+          <!--ADD TEXT TO SHOW HEATER IS ON HERE-->
+          <p>STATUS: Fan <strong>%fan_status%</strong></p>
+          <br>
+          <p>Turn Fan ON/OFF</p>
+          <p> <a href="/fanon"><button class="button">ON</button></a></p>
+          <p> <a href="/fanoff"><button class="button">OFF</button></a></p>
+        </div>
+         </div>
+      </div>
+
+      
+      <div class="container">
+        <div class ="box">
+        <div id="humidity">
+          <h3>Humidity</h3>
+         <img src="/humidity icon.png" alt="humidity icon" width="100">
+          <p><strong>%humidity%</strong> &percnt; </p>
+
+        </div>
+         </div>
+         <div class ="box">
+        <div class = "the_second">
+          <h3>Humidifier</h3>
+          <img src="/humidifier icon.png" alt="humidifier icon" width="100">
+          <p>STATUS: Humidifier <strong>%humidifier_status%</strong> </p>
+          <p> <a href="/humidifieron"><button class="button">ON</button></a></p>
+          <p> <a href="/humidifieroff"><button class="button">OFF</button></a></p>
+           </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class ="box">
+        <div id="ph">
+          <h3>PH_Level</h3>
+          <img src="/ph icon.png" alt="ph icon" width="100">
+          <p><strong>%ph%</strong> </p>
+
+         </div>
+        </div>
+        <div class ="box">
+        <div class = "the_second">
+          <h3>PH_Status</h3>
+          <br>
+          <p>STATUS: PH<strong>%ph_status%</strong> </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class ="box">
+        <div id="nutrients">
+          <h3>Nutrients</h3>
+          <img src="/nutrients icon.png" alt="nutrients icon" width="100">
+          <p>Nitrogen<strong>%nitrogen%</strong> </p>
+          <p>Phosphorus<strong>%phosphorus%</strong> </p>
+          <p>Potassium<strong>%potassium%</strong> </p>
+
+          </div>
+        </div>
+        <div class ="box">
+        <div class = "the_second">
+          <h3>Nutrient_Status</h3>
+          <br>
+          <p>STATUS: Nutrients<strong>%nutrients_status%</strong> </p>
+          </div>
+        </div>
+      </div>
+
+       <div class="container">
+         <div class ="box"> 
+        <div id="water-level">
+          <h3>Water_Level</h3>
+          <img src="/water level icon.png" alt="water level icon" width="100">
+          <p><strong>%water_level%</strong> </p>
+          </div>
+        </div>
+         <div class ="box">
+        <div class = "the_second">
+          <h3>PUMP</h3>
+          <img src="/pump icon.png" alt="pump icon" width="100">
+          <br>
+          <p>Turn Pump ON/OFF</p>
+          <p> <a href="/pumpon"><button class="button">ON</button></a></p>
+          <p> <a href="/pumpoff"><button class="button">OFF</button></a></p>
+        </div>
+      </div>
+    </div>
+
+
+      
+    </section>
+
+
+    <footer>
+    <p>Machada Agricultural,copyright &copy; 2021</p>
+    <p>Contact: 07073628</p>
+    <p>Email: robimacha90@gmail.com</p>
+  </footer>
+
+
+</body>
+</html>
