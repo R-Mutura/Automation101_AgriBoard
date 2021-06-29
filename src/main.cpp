@@ -39,8 +39,8 @@ int pot=0;
 nutrients nutrient_vals;
 //tank level read function decleration
 //variable for the get level use
-#define Trigger 4
-#define Echo 5
+#define Trigger 12
+#define Echo 13
 const int tank_height = 300;//cm
  long water_level=0;
 long get_level();
@@ -287,6 +287,8 @@ long dhtWait=2000;
 void setup(){
   // Serial port for debugging purposes
   Serial.begin(115200);
+  pinMode(Trigger,INPUT);
+  pinMode(Echo, OUTPUT);
   pinMode(lightpin, OUTPUT);
 //set outputs
   pinMode(heater, OUTPUT);

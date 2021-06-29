@@ -9,8 +9,8 @@ HardwareSerial uart(1);
 
  
  //enable pins for the rs232 driver
-#define RE 8
-#define DE 7
+#define RE 5
+#define DE 4
 
 byte values[11];
 
